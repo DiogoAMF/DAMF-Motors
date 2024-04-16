@@ -1,0 +1,192 @@
+/* Define estilos para todos os elementos */
+* {
+  margin: 0; /* Define margem zero */
+  padding: 0; /* Define padding zero */
+  box-sizing: border-box; /* Faz com que a largura e a altura incluam padding e borda */
+  font-family: "Roboto", sans-serif; /* Define a família de fontes para todos os elementos */
+}
+
+/* Define o comportamento de overflow horizontal no elemento HTML */
+html {
+  overflow-x: hidden;
+}
+
+/* Define estilos para o container principal */
+.container {
+  max-width: 1024px; /* Largura máxima do container */
+  width: 100%; /* Largura total */
+  margin: 0 auto; /* Margem automática nas laterais para centralizar */
+}
+
+/* Define estilos para cabeçalho e rodapé */
+header,
+footer {
+  background-color: #192a56; /* Cor de fundo */
+  padding-top: 16px; /* Espaçamento superior */
+  color: #fff; /* Cor do texto */
+}
+
+/* Define estilos para o cabeçalho */
+header {
+  position: sticky; /* Define o posicionamento como fixo */
+  top: 0; /* Alinha ao topo */
+  left: 0; /* Alinha à esquerda */
+  z-index: 1; /* Define a ordem de empilhamento */
+}
+
+/* Define estilos para container dentro do cabeçalho e rodapé */
+header > .container,
+footer > .container {
+  justify-content: space-between; /* Distribui o espaço entre os elementos */
+  align-items: center; /* Alinha os itens verticalmente */
+  padding-bottom: 16px; /* Espaçamento inferior */
+}
+
+/* Define estilos para a navegação */
+nav {
+  background-color: #575fcf; /* Cor de fundo */
+  padding: 16px 0; /* Espaçamento interno */
+  display: none; /* Inicialmente oculta */
+}
+
+nav li {
+  list-style: none; /* Remove marcadores de lista */
+  display: inline; /* Exibe os itens em linha */
+  margin-right: 16px; /* Espaçamento à direita entre os itens */
+  font-size: 18px; /* Tamanho da fonte */
+  font-weight: bold; /* Texto em negrito */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+nav li a {
+  color: #fff; /* Cor do texto */
+  text-decoration: none; /* Remove sublinhado dos links */
+}
+
+/* Define estilos para o menu hamburguer */
+.menu-hamburguer {
+  width: 32px; /* Largura */
+  cursor: pointer; /* Cursor do mouse */
+}
+
+.menu-hamburguer span {
+  height: 2px; /* Altura */
+  width: 100%; /* Largura */
+  background-color: #fff; /* Cor de fundo */
+  display: block; /* Exibe como bloco */
+  margin-bottom: 4px; /* Espaçamento inferior */
+}
+
+/* Define estilos para um container flexível */
+.container-flex {
+  display: flex; /* Exibe os elementos como flexíveis */
+}
+
+/* Define estilos para uma imagem dentro da seção "sobre a loja" */
+#sobre-a-loja img {
+  max-width: 400px; /* Largura máxima */
+  margin-right: 24px; /* Espaçamento à direita */
+}
+
+/* Define estilos para seções */
+section {
+  padding: 48px 0; /* Espaçamento interno */
+}
+
+section h2 {
+  margin-bottom: 16px; /* Espaçamento inferior */
+}
+
+/* Define estilos para a lista de veículos */
+.lista-veiculos {
+  flex-wrap: wrap; /* Permite a quebra de linha */
+}
+
+.lista-veiculos li {
+  list-style: none; /* Remove marcadores de lista */
+  max-width: 30%; /* Largura máxima */
+  margin-bottom: 24px; /* Espaçamento inferior */
+}
+
+.lista-veiculos li img {
+  max-width: 100%; /* Largura máxima */
+}
+
+.lista-veiculos li h3 {
+  margin: 16px 0; /* Espaçamento externo */
+}
+
+/* Define estilos para o item central */
+.item-central {
+  margin: 0 5%; /* Margem à esquerda e à direita */
+}
+
+/* Define estilos para botões */
+button {
+  display: block; /* Exibe como bloco */
+  width: 100%; /* Largura total */
+  padding: 8px 0; /* Espaçamento interno */
+  border: none; /* Remove a borda */
+  background-color: #119759; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  cursor: pointer; /* Cursor do mouse */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: bold; /* Texto em negrito */
+  font-style: italic; /* Texto em itálico */
+  border-radius: 6px; /* Raio da borda */
+}
+
+button:hover {
+  background-color: #0c6c40; /* Cor de fundo ao passar o mouse */
+}
+
+/* Define estilos para o preço */
+.price {
+  margin: 16px 0; /* Espaçamento externo */
+  display: block; /* Exibe como bloco */
+}
+
+.price del {
+  color: #ccc; /* Cor do texto */
+  font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Define estilos para campos de formulário */
+.form-campo {
+  margin-bottom: 16px; /* Espaçamento inferior */
+}
+
+.form-campo label {
+  font-weight: bold; /* Texto em negrito */
+  display: block; /* Exibe como bloco */
+}
+
+.form-campo input,
+.form-campo textarea {
+  width: 100%; /* Largura total */
+  display: block; /* Exibe como bloco */
+  padding: 8px; /* Espaçamento interno */
+}
+
+.form-campo textarea {
+  resize: none; /* Impede redimensionamento */
+}
+
+/* Define estilos para formulários */
+form {
+  max-width: 360px; /* Largura máxima */
+}
+
+form button {
+  max-width: 120px; /* Largura máxima */
+}
+
+/* Define estilos para itens de lista dentro do rodapé */
+footer li {
+  list-style: none; /* Remove marcadores de lista */
+  margin-left: 16px; /* Espaçamento à esquerda */
+}
+
+footer li img {
+  height: 32px; /* Altura */
+}
